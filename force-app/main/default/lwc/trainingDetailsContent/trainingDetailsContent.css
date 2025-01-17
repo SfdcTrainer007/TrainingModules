@@ -1,0 +1,190 @@
+/* Hero Section with Parallax Effect */
+.hero {
+    position: relative;
+    background: linear-gradient(120deg, #2a2a72, #009ffd);
+    height: 400px;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Button Selection with Hover Animations */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.training-button {
+    width: 200px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.training-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Training Details Styling */
+.training-details {
+    padding: 3rem;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.training-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.training-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.featured-badge {
+    background-color: #ff6347;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 2rem;
+}
+
+/* Modules Grid Styling */
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.module-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.module-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.module-icon {
+    margin-bottom: 1rem;
+}
+
+.module-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.module-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Modal Styling */
+.slds-modal__container {
+    width: 60%;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 2.5rem;
+}
+
+.slds-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slds-modal__close {
+    color: #999;
+}
+
+.slds-modal__content {
+    padding: 1rem 0;
+    color: #444;
+}
+
+.slds-modal__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+.slds-backdrop_open {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .training-button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .modules-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slds-modal__container {
+        width: 90%;
+    }
+}

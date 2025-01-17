@@ -1,0 +1,6 @@
+.create-record-section {
+    border: 1px solid #d3d3d3; /* Add border to create a small box */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add rounded corners for a box-like appearance */
+    background-color: #f5f5f5; /* Add background color */
+}

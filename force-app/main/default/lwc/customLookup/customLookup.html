@@ -1,0 +1,29 @@
+<template>
+    <lightning-input
+        type="text"
+        label="Search"
+        value={searchKey}
+        onchange={handleSearchKeyChange}
+    ></lightning-input>
+    <div if:true={searchResults}>
+        <ul class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid">
+            <template for:each={searchResults} for:item="result">
+                <li
+                    key={result.Id}
+                    class="slds-listbox__item"
+                    onclick={selectItem}
+                    data-id={result.Id}
+                    data-custom-type={result.Type}
+                >
+                    <div class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_plain">
+                        <span class="slds-media__body">
+                            <span class="slds-listbox__option-text slds-listbox__option-text_entity">
+                                {result.Name}
+                            </span>
+                        </span>
+                    </div>
+                </li>
+            </template>
+        </ul>
+    </div>
+</template>

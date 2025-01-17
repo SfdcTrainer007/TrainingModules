@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="LdsCreateContact" icon-name="standard:contact">
+      <div class="slds-m-around_medium">
+        <lightning-input label="Id" disabled value={contactId}></lightning-input>
+        <lightning-input
+          label="First Name"
+          onchange={handleFirstNameChange}
+          class="slds-m-bottom_x-small"
+        ></lightning-input>
+        <lightning-input
+          label="Last Name"
+          onchange={handleLastNameChange}
+          class="slds-m-bottom_x-small"
+        ></lightning-input>
+        <lightning-button
+          label="Create Contact"
+          variant="brand"
+          onclick={createContact}
+        ></lightning-button>
+      </div>
+    </lightning-card>
+  </template>

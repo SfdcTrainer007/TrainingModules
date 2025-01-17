@@ -1,0 +1,42 @@
+.custom-container{
+	color : black;
+}
+.slds-table {
+    margin-top: 1rem;
+}
+
+.slds-table_bordered tbody tr {
+    border-bottom: 1px solid #d8dde6;
+}.slds-modal__container {
+    width: 50rem;
+}
+
+.slds-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slds-backdrop {
+    z-index: 50;
+}
+
+
+.slds-table_bordered tbody tr:last-child {
+    border-bottom: none;
+}
+
+.slds-table_bordered td {
+    border-right: 1px solid #d8dde6;
+}
+
+.slds-table_bordered td:last-child {
+    border-right: none;
+}
+
+.slds-m-top_medium {
+    margin-top: 1rem;
+}
+.custom-backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}

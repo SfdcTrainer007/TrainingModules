@@ -1,0 +1,11 @@
+<template>
+    <template if:true={showSubmitButton}>
+        <lightning-button label="Submit Approval Asset" onclick={handleButtonClick}></lightning-button>
+    </template>
+
+    <lightning-flow 
+        if:true={flowVisible} 
+        flow-api-name={flowApiName} 
+        onstatuschange={handleStatusChange}>
+    </lightning-flow>
+</template>
